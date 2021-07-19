@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded",	() => {
         const dogImage = document.createElement('img');
                         
         //Set image attributes and class
-        dogImage.setAttribute('src', `./img/${Math.floor(Math.random() * 8)}.JPG`);
+        dogImage.setAttribute('src', `img/${Math.floor(Math.random() * 8)}.JPG`);
         dogImage.classList.add('dog-media');
         
         //Display image
