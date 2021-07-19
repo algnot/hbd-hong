@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@300&family=Itim&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 25px;
+    background-color: #E98580;
+    text-align: center;
+}
+
+.dog-btn {
+    flex-shrink: 0;
+    display: block;
+    font-family: 'Itim' , 'Athiti' , Arial, sans-serif;
+    font-size: 25px;
+    border: 2px solid #27272d;
+    border-radius: 10px;
+    margin-top: calc(15px + 2vh);
+    padding: 15px 20px;
+    background: none;
+    color: #131316;
+    background-color: #FDD2BF;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    outline: none;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.dog-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23);
+}
+
+.dog-figure {
+    position: relative;
+    max-width: 100%;
+    width: calc(200px + 10vw + 10vh);
+    height: calc(250px + 10vw + 10vh);
+    border-radius: calc(5px + 1vw + 1vh);
+    border: calc(2px + 0.8vw + 0.8vh) solid #fefefe;
+    border-bottom: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: #fefefe;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.dog-media {
+    width: 100%;
+    height: calc(100% - 98px);
+    object-fit: cover;
+    border: 1px solid #eee;
+}
+
+.dog-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Itim' , 'Athiti' , "Indie Flower", cursive;
+    font-size: 32px;
+    line-height: 1.5;
+    padding: 25px 0;
+    background-color: #fefefe;
+}
